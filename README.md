@@ -27,7 +27,7 @@ In this exercise you will learn how to use recursion for solving problems, and r
 ## Examples
 
 A - "^\\d+$". This RegEx will match any Integer number.<br/>
- 	\t1- 5449 is a match.<br/>
+ 	?ts=41- 5449 is a match.<br/>
 	2- 45.5 is not a match because it has '.'.<br/>
  	3- a448 is not a match because it has 'a'.<br/>
 	
