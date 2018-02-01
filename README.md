@@ -27,27 +27,27 @@ In this exercise you will learn how to use recursion for solving problems, and r
 ## Examples
 
 A - "^\\d+$". This RegEx will match any Integer number.<br/>
- 	?ts=4 1- 5449 is a match.<br/>
-	2- 45.5 is not a match because it has '.'.<br/>
- 	3- a448 is not a match because it has 'a'.<br/>
+ 	- 5449 is a match.<br/>
+ 	- 45.5 is not a match because it has '.'.<br/>
+ 	- a448 is not a match because it has 'a'.<br/>
 	
 B - "^\[\\d|0]+\[.]\\d+$". This RegEx will match any number that starts with 1+ numbers followed by '.' followed by and ends by 1+ numbers and must end with a number.<br/>
-	1- 215.565 is a match.<br/>
-	2- 0.25 is a match.<br/>
-	3- .25 is not a match because it does not start with a number.<br/>
-	4- 25. is not a match because it does not end with a number.<br/>
+	- 215.565 is a match.<br/>
+	- 0.25 is a match.<br/>
+	- .25 is not a match because it does not start with a number.<br/>
+	- 25. is not a match because it does not end with a number.<br/>
 
 C - "^\[\[a-zA-Z]|_]\[\[a-zA-Z]||\\d|_]*$". This RegEx will match a vaild identifier which is any word that start with '_' or alphabetical character followed by 0+ alphanumerical characters or '_'. <br/>
-	1- _12 is a match.<br/>
-	2- _A23A2____54 is a match.<br/>
-	3- 1_asdj21 is not a match because it does not start with '_' or alphabetical character. <br/>
-	4- _qas@ is not a match because it contains '@' which is not alphanumerical nor '_'.<br/>
+	- _12 is a match.<br/>
+	- _A23A2____54 is a match.<br/>
+	- 1_asdj21 is not a match because it does not start with '_' or alphabetical character. <br/>
+	- _qas@ is not a match because it contains '@' which is not alphanumerical nor '_'.<br/>
 	
 D - "^\[a]\[\[\[a-zA-Z]||\\d]]*$". This RegEx will match any word that starts with 'a' followed by 0+ alphanumerical characters and must end with either a or alphanumerical character. <br/>
-	1- "asw1234" is a match.<br/>
-	2- "a12q" is a match.<br/>
-	3- "bas2312" is not a match because it does not start with 'a'.<br/>
-	4- "a@fs" is not a match because it contains "@" which is not alphanumerical.<br/>
+	- "asw1234" is a match.<br/>
+	- "a12q" is a match.<br/>
+	- "bas2312" is not a match because it does not start with 'a'.<br/>
+	- "a@fs" is not a match because it contains "@" which is not alphanumerical.<br/>
 
 
 
