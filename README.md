@@ -24,7 +24,7 @@ In this exercise you will learn how to use recursion for solving problems, and r
 | \[re1|re2]    | Match either expression re1 or re2                     |
 
 
-##Examples
+## Examples
 
 A - "^\\d+$". This RegEx will match any Integer number.
 	1- 5449 is a match.
