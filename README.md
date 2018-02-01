@@ -29,7 +29,28 @@ In this exercise you will write three functions, for three different regex formu
 
 Examples
 
+A - "^\\d+$". This RegEx will match any Integer number.
+	1- 5449 is a match.
+	2- 45.5 is not a match because it has '.'.
+	3- a448 is not a match because it has 'a'.
+	
+B - "^\[\\d|0]+\[.]\\d+$". This RegEx will match any number that starts with 1+ numbers followed by '.' followed by and ends by 1+ numbers and must end with a number.
+	1- 215.565 is a match.
+	2- 0.25 is a match.
+	3- .25 is not a match because it does not start with a number.
+	4- 25. is not a match because it does not end with a number.
 
+C - "^\[\[a-zA-Z]|_]\[\[a-zA-Z]||\\d|_]*$". This RegEx will match a vaild identifier which is any word that start with '_' or alphabetical character followed by 0+ alphanumerical characters or '_'. 
+	1- _12 is a match.
+	2- _A23A2____54 is a match
+	3- 1_asdj21 is not a match because it does not start with '_' or alphabetical character. 
+	4- _qas@ is not a match because it contains '@' which is not alphanumerical nor '_'.
+	
+D - "^\[a]\[\[\[a-zA-Z]||\\d]]*$". This RegEx will match any word that starts with 'a' followed by 0+ alphanumerical characters and must end with either a or alphanumerical character. 
+	1- "asw1234" is a match.
+	2- "a12q" is a match.
+	3- "bas2312" is not a match because it does not start with 'a'.
+	4- "a@fs" is not a match because it contains "@" which is not alphanumerical.
 
 
 
