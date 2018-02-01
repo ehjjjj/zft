@@ -64,10 +64,10 @@ In this exercise you will write three functions, for three different regex formu
 
 # Testing your code
 Following are the files we provide:
-1. `pe04.c` - Define your functions in this assignment.
-2. `pe04.h` - Header file, which has definition for the functions and structures you need in this assignment.
-3. `main.c` - main file of this assignment.
-4. `test.txt` - This is the database file which stores all student's info.
+1. `pe04.c` 
+2. `pe04.h` 
+3. `main.c`
+4. `test.txt` - This file has n strings to match.
 
 
 To test your code. You have to first compile it and then run the following command.
