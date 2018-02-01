@@ -11,10 +11,6 @@ In this exercise you will learn how to use recursion for solving problems, and r
 * Understanding regular expressions.
 
 
-
-# Functions you need to complete
-In this exercise you will write three functions, for three different regex formulas rule1(), rule2(), rule3() in pe07.c, define protoypes in pe07.h, in the main() in main.c 
-
 ## Some of regular expression metacharacter syntax 
 |    Pattern    |               Description                              |  
 | ------------- | ------------------------------------------------------ |
@@ -55,40 +51,22 @@ D - "^\[a]\[\[\[a-zA-Z]||\\d]]*$". This RegEx will match any word that starts wi
 
 
 
+# Functions you need to complete
+In this exercise you will write three functions, for three different regex formulas (A,B, and C from the examples). IsInteger(), IsDouble(), and IsValidIdentifier().
 
-In this exercise, you have to complete three functions - `Connect()`, `Close()`, `SearchByName()` in `pe04.c`, `main()` in `main.c`, and define `Student` structure in the `pe04.h` file.
 
-1. `Connect()` - Read the content in the file and allocate appropriate memory to store the content. This function accepts only one argument:
-	1. filename: the filename of the database you are going to connect.
-	2. You may want to use: `fopen()`, `fclose()`, `fscanf()`, `feof()` to read the file content.
-	3. This function returns a pointer to `StudentDatabase` object. 
-2. `Close()` - This function releases the memory you allocated in `Connect()` and close the database. Not completing this function will lead to memory leak. This function has one argument:
-	1. studb: the pointer to `StudentDatabase` object of which the memory needs to be freed.   
-3. `SearchByName()` - This function searches the student by name in database. It accepts two arguments:
-	1. studb: the pointer to `StudentDatabase` object where you will search for the student.
-	2. name: the name of the student you are looking for.
-	3. This function should return a `NULL` if the name is not in the database, otherwise it should return a pointer to the `Student` structure which stores all the info of that student. 
-4. `main()` - In this exercise, you will learn to use `argc` and `argv`. Here are the specifications.
-	1. `argc`: If `argc` is less than 3, you should return `EXIT_FAILURE` and print "Insufficient arguments\n".
-	2. `argv[1]`: name of the input file.
-	3. `argv[2]`: should be either "-a", or "-s".
- 			When `argv[2]` is "-a", you should print all the students in database using `PrintDatabase()` function and return `EXIT_SUCCESS`.
- 			When `argv[2]` is "-s', you should  enter the name of the student in `argv[3]` and print information of that student, if there is no input in `argv[3]` you should print "Wrong arguments\n" and return `EXIT_FAILURE`.
-			If `argv[2]` is neither "-a" nor "-s", you should print "Wrong arguments\n" and return `EXIT_FAILURE`
-	4. `argv[3]`: We only need input in `argv[3]` when `argv[2]` is equal to "-s". `argv[3]` is the name of the student you are looking for. If there is no such student, you should print "No this student\n". Otherwise, use `PrintStudent()` function to print the information of the student.
-5. Define `Student` structure in pe04.h: The `Student` structure has 6 fields, we have deifned 2 of them for you. Complete the remaining 6 fields. See `pe04.h` for further information.
+1. `IsInteger()` - This function will return true if the passed string is an integer and false otherwise.
+2. `IsDouble()` - This function will return true if the passed string is a double and false otherwise.
+3. `IsValidIdentifier()` - This function will return true if the passed string is a vaild identifier and false otherwise.
+4. `main()` - in the main file you will read the test file which has 'n' number of strings, and you will print on a file foreach of the strings in the file 'Integer', 'Double', 'Identifier', or 'None' if the string does not match any of the rules.
+
 
 # Testing your code
 Following are the files we provide:
 1. `pe04.c` - Define your functions in this assignment.
 2. `pe04.h` - Header file, which has definition for the functions and structures you need in this assignment.
 3. `main.c` - main file of this assignment.
-4. `database.txt` - This is the database file which stores all student's info.
-5. `output1.txt` - This is an example output when you run `./pe04 database.txt -a`
-6. `output2.txt` - This is an example output when you run `./pe04 database.txt -s name`
-	Note that this file has multiple lines because we run the command with different names.
-7. `output3.txt` - This is an example output when you run `./pe04` with wrong argc or argv arguments. 
-	Differnt types of argc, argv errors leads to different output. 
+4. `test.txt` - This is the database file which stores all student's info.
 
 
 To test your code. You have to first compile it and then run the following command.
