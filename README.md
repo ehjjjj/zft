@@ -27,9 +27,9 @@ In this exercise you will learn how to use recursion for solving problems, and r
 ## Examples
 
 A - "^\\d+$". This RegEx will match any Integer number.
-	1- 5449 is a match.
-	2- 45.5 is not a match because it has '.'.
-	3- a448 is not a match because it has 'a'.
+ 1- 5449 is a match.
+ 2- 45.5 is not a match because it has '.'.
+ 3- a448 is not a match because it has 'a'.
 	
 B - "^\[\\d|0]+\[.]\\d+$". This RegEx will match any number that starts with 1+ numbers followed by '.' followed by and ends by 1+ numbers and must end with a number.
 	1- 215.565 is a match.
