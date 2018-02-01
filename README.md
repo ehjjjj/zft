@@ -71,31 +71,8 @@ Following are the files we provide:
 
 
 To test your code. You have to first compile it and then run the following command.
-
-Print all student info in database.
-```
-./pe04 database.txt -a
-```
-Print the student you are looking for in database.
-```
-./pe04 database.txt -s name
-```
-1. pe04 - This is binary that should get generated
-2. database.txt - This is the database file which stores all students' information.
-3. "-a", "-s" - These are the arguments you should specify. "-a" means to print all the information in the database. "-s" means to print the information of the student you are looking for. 
-4. name - name of the student you are looking for. You only have to input this argument when `argv[2]` is "-s".
-
-# Checking for memory errors
-You should also run./pe04 with arguments under valgrind. To do that, you have to use, for example, the following command:
-```
-valgrind --log-file=memcheck.log ./pe04 database.txt -a
-```
-and
-```
-valgrind --log-file=memcheck.log ./pe04 database.txt -s name
-```
-Note that you should use other input arguments to extensively test your function. If you follow the instructions and keep the malloc and free functions in the right place, you should not have memory problems in this assignment.
-
+./pe07 test.txt
+Then diff between your output file and expected file.
 
 # Submitting Your code
 ** This is a programming exercise, so you would have to submit the code on Blackboard.**
