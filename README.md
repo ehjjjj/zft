@@ -37,11 +37,11 @@ B - "^\[\\d|0]+\[.]\\d+$". This RegEx will match any number that starts with 1+ 
 	- .25 is not a match because it does not start with a number.<br/>
 	- 25. is not a match because it does not end with a number.<br/>
 
-C - "^\[\[a-zA-Z]|_]\[\[a-zA-Z]||\\d|_]*$". This RegEx will match a vaild identifier which is any word that start with '_' or alphabetical character followed by 0+ alphanumerical characters or '_'. <br/>
+C - "^\[\[a-zA-Z]|_]\[\[a-zA-Z]||\\d|_]*$". This RegEx will match a vaild identifier which is any word that start with '\_' or alphabetical character followed by 0+ alphanumerical characters or '\_'. <br/>
 	- _12 is a match.<br/>
 	- _A23A2____54 is a match.<br/>
-	- 1_asdj21 is not a match because it does not start with '_' or alphabetical character. <br/>
-	- _qas@ is not a match because it contains '@' which is not alphanumerical nor '_'.<br/>
+	- 1_asdj21 is not a match because it does not start with '\_' or alphabetical character. <br/>
+	- _qas@ is not a match because it contains '@' which is not alphanumerical nor '\_'.<br/>
 	
 D - "^\[a]\[\[\[a-zA-Z]||\\d]]*$". This RegEx will match any word that starts with 'a' followed by 0+ alphanumerical characters and must end with either 'a' or alphanumerical character. <br/>
 	- "asw1234" is a match.<br/>
