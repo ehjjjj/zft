@@ -43,7 +43,7 @@ C - "^\[\[a-zA-Z]|_]\[\[a-zA-Z]||\\d|_]*$". This RegEx will match a vaild identi
 	- 1_asdj21 is not a match because it does not start with '_' or alphabetical character. <br/>
 	- _qas@ is not a match because it contains '@' which is not alphanumerical nor '_'.<br/>
 	
-D - "^\[a]\[\[\[a-zA-Z]||\\d]]*$". This RegEx will match any word that starts with 'a' followed by 0+ alphanumerical characters and must end with either a or alphanumerical character. <br/>
+D - "^\[a]\[\[\[a-zA-Z]||\\d]]*$". This RegEx will match any word that starts with 'a' followed by 0+ alphanumerical characters and must end with either 'a' or alphanumerical character. <br/>
 	- "asw1234" is a match.<br/>
 	- "a12q" is a match.<br/>
 	- "bas2312" is not a match because it does not start with 'a'.<br/>
