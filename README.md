@@ -50,8 +50,6 @@ D - "^\[a]\[\[\[a-zA-Z]||\\d]]*$". This RegEx will match any word that starts wi
 	- "a@fs" is not a match because it contains "@" which is not alphanumerical.<br/>
 
 
-
-
 # Functions you need to complete
 In this exercise you will write three functions, for three different regex formulas (A,B, and C from the examples). IsInteger(), IsDouble(), and IsValidIdentifier().
 
@@ -71,15 +69,17 @@ Following are the files we provide:
 
 
 To test your code. You have to first compile it and then run the following command.
-./pe07 test.txt
-Then diff between your output file and expected file.
+./pe07 test.txt -I // -I To match all strings in test.txt with Integer rule. If it is integer, print "Integer". Otherwise,print "Not integer". Expected output for this command in IntegerTest.txt
+
+/pe07 test.txt -D // -D To match all strings in test.txt with Double rule. If it is double, print "Double". Otherwise,print "Not double". Expected output for this command in DoubleTest.txt
+
+/pe07 test.txt -ID// -ID To match all strings in test.txt with Vaild Identifier rule. If it is Idebtifier, print "Identifier". Otherwise, print "Not Identifier". Expected output for this command in ValidIDTest.txt
 
 # Submitting Your code
 ** This is a programming exercise, so you would have to submit the code on Blackboard.**
 
 You have to submit the following file in a <strong>zip</strong> folder on the blackboard:
-* `pe04.c` - This file should have `Connect()`, `Close()`, `SearchByName()` functions completed.
-* `pe04.h` - This file should have `Student` structure defined.
+* `pe04.c` - This file should have `IsInteger()`, `IsDouble()`, and `IsValidIdentifier()`. functions completed.
 * `main.c` - This file should have `main()` function completed.
 <strong>You will not get any credits if the submitted file is not zipped</strong>
 
