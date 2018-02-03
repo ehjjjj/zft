@@ -73,9 +73,9 @@ Following are the files we provide:
 To test your code. You have to first compile it and then run one of the following commands. <br>
 ./pe07 test.txt -I // -I To match all strings in test.txt with Integer rule. If it is integer, print "Integer". Otherwise,print "Not integer". Expected output for this command in IntegerTest.txt
 
-/pe07 test.txt -D // -D To match all strings in test.txt with Double rule. If it is double, print "Double". Otherwise,print "Not double". Expected output for this command in DoubleTest.txt
+./pe07 test.txt -D // -D To match all strings in test.txt with Double rule. If it is double, print "Double". Otherwise,print "Not double". Expected output for this command in DoubleTest.txt
 
-/pe07 test.txt -ID// -ID To match all strings in test.txt with Vaild Identifier rule. If it is Idebtifier, print "Identifier". Otherwise, print "Not Identifier". Expected output for this command in ValidIDTest.txt
+./pe07 test.txt -ID// -ID To match all strings in test.txt with Vaild Identifier rule. If it is Idebtifier, print "Identifier". Otherwise, print "Not Identifier". Expected output for this command in ValidIDTest.txt
 
 # Submitting Your code
 ** This is a programming exercise, so you would have to submit the code on Blackboard.**
