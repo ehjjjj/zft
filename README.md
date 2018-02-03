@@ -5,6 +5,8 @@
 
 In this exercise you will learn how to use recursion for solving problems, and regular expressions (RegEx). RegEx is used mainly for pattern-matching, parsing, and filtering. Most importantly it is used by compilers such as gcc (C compiler) to translate the high level language to machine language. https://www.tutorialspoint.com/compiler_design/compiler_design_lexical_analysis.htm
 
+More about RegEx : https://www.tutorialspoint.com/java/java_regular_expressions.htm
+
 
 # Learning Goals
 * Use recursion to solve problems by dividing the problem into smaller problems.
