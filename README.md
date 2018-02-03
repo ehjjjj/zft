@@ -80,7 +80,7 @@ To test your code. You have to first compile it and then run the following comma
 
 You have to submit the following file in a <strong>zip</strong> folder on the blackboard:
 * `pe04.c` - This file should have `IsInteger()`, `IsDouble()`, and `IsValidIdentifier()`. functions completed.
-* `main.c` - This file should have `main()` function completed.
+* `main.c` - This file should have `main()` function completed.<br/>
 <strong>You will not get any credits if the submitted file is not zipped</strong>
 
 The **only** way to submit homework is through Blackboard.
