@@ -4,7 +4,7 @@
 
 How your grade is calculated>>
 
-<strong>IsInteger() function</strong> (15 points)
+## <strong>IsInteger() function</strong> (15 points)
 - In testInt.txt, you will find 15 different cases were used to verify your code. (1 point for each test case)
 - In int_expected.txt, you will find the right output for each case in testInt.txt </br></br>
 For testing, you can compile and run  your code through the following command:
