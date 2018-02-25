@@ -5,7 +5,7 @@ HW07 has three functions:
 1. IsInteger() function (15 points):
 - In testint.txt, you will find 15 different cases were used to verify your code. (1 point for each test case)
 - In int_expected.txt, you will find the right output for each case in testint.txt. </br></br>
-\*To test your code compile your code and run the following command:
+To test your code compile your code and run the following command:
 <pre>
 ./pe07 testint.txt -I > out.txt
 </pre>
