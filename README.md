@@ -2,6 +2,7 @@
 
 `NOTE: Any compile or runtime error (Segmentaion Fault) while running through any of the functions (IsInteger(), IsDouble(), IsValidIdentifier()) will cost you 15 points (you will get zero for that function). Plus, you will lose another 15 points because we have to use our own function in testAll.txt (sums up to 30 points). In case you submitted cases.txt, you will lose 1.67 points for the same reason (total of 31.67 points).`</br></br>
 
+<strong> If you did not use the proper flags (i.e forgetting to use -Werror) while compiling may lead to compile error. Regrade is not possible for such cases</strong>
 
 
 ## IsInteger() function (15 points)
@@ -62,8 +63,8 @@ diff -w -i -U 0 out4.txt all_expected.txt
 ./pe07 cases.txt > out5.txt //Your output
 </pre>
 
-Then we run our code and compare the two output files.
-
+Then we run our code and compare the two output files. To verfiy, you can apply the RegEx rules to ensure the correctness of your ouput.
+For each difference you will lose 0.1 points out of 5.
 
 
 
