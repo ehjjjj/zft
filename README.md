@@ -5,13 +5,13 @@ HW07 has three functions:
 1. IsInteger() function (15 points):
 - In testint.txt, you will find 15 different cases were used to verify your code. (1 point for each test case)
 - In int_expected.txt, you will find the right output for each case in testint.txt.
-* To test your code compile your code and run the following command:
+\* To test your code compile your code and run the following command:
 <pre>
 ./pe07 testint.txt -I > out.txt
 </pre>
 
-Then you can use `diff` command to compare. </br>
-`Any compile error or runtime error (Segmentaion Fault) while running through this function will cost you 15 points ( you will get zero for this function). Plus, you will lose another 15 points because we have to use our own function in testAll.txt (sums up to 30 points). In case you submitted cases.txt, you will lose 1.67 points for the same reason.`</br>
+Then you can use `diff` command to compare. </br></br>
+`Any compile error or runtime error (Segmentaion Fault) while running through this function will cost you 15 points ( you will get zero for this function). Plus, you will lose another 15 points because we have to use our own function in testAll.txt (sums up to 30 points). In case you submitted cases.txt, you will lose 1.67 points for the same reason.`</br></br>
 <strong>Any compile error or runtime error at any function will cost you 31.67 points.</strong>
 	
 2. ExecuteQuery() function (30 points):
