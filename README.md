@@ -1,7 +1,7 @@
 # HW08 grading policy
 
-`If you did not submit makefile, you will lose 15% of your grade.`
-`If you did not submit main.c, you will get zero`
+`If you did not submit makefile, you will lose 15% of your grade.` <br>
+`If you did not submit main.c, you will get zero` <br>
 `If you did not use the proper flags (i.e forgetting to use -Werror) while compiling may lead to compile error. Regrade is not possible for such cases`
 
 ## createDouble() function (100 points)
