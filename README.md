@@ -15,7 +15,7 @@
 ./pa08 -D 4 8 5 | sort >stest5.txt  #right output in test5
 </pre>
 
-The grade for each command is calculated as following : (20 - 20\*(The number of different lines between your output and the right output, divided by the number of lines in the right output)). For example, `./pa08 -D 1 9 3 | sort >stest1.txt` has 81 lines, if the number of different lines is 10; your grade will be ( 20-(10/81)\*20) = 17.5 out of 20.
+The grade for each command is calculated as following : (20 - 20\*(The number of different lines between your output and the right output, divided by the number of lines in the right output)). For example, `./pa08 -D 1 9 3 | sort >stest1.txt` has 81 lines, if the number of different lines is 10; your grade will be ( 20-(10/81)\*20) = 17.5 out of 20. 
 
 
 	
