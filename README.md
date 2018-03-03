@@ -30,8 +30,8 @@ The grade for each command is calculated similar to the creatDouble() function.
 
 # Testing your code
 
-To test your code you have two options:
-1- run each command and `diff`.
+To test your code you have two options: <br>
+1- run each command and `diff`. <br>
 2- run the following command in the grading directory `python p.py`, which will create `yourGrade.txt` file that has detailed explanation of your grade. But you need to deduct 2 points per hour late yourself.
 
 
