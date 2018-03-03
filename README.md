@@ -25,7 +25,7 @@ The grade for each command is calculated as following : (20 - 20\*(The number of
 ./pa08 -VID a a B B 3 3 4 | sort > svtest1.txt #(20 points) #right output in vtest1
 ./pa08 -VID a z A Z 1 9 1 | sort > svtest2.txt #(10 points) #right output in vtest2
 ./pa08 -VID g h M N 5 6 3 | sort > svtest3.txt #(20 points) #right output in vtest3
-<pre>
+</pre>
 
 The grade for each commands is calculated similar to the creatDouble() function.
 
