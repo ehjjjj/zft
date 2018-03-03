@@ -1,70 +1,39 @@
-# HW07 grading policy
-
-`NOTE: Any compile or runtime error (Segmentaion Fault) while running through any of the functions (IsInteger(), IsDouble(), IsValidIdentifier()) will cost you 15 points (you will get zero for that function). Plus, you will lose another 15 points because we have to use our own function in testAll.txt (sums up to 30 points). In case you submitted cases.txt, you will lose 1.67 points for the same reason (total of 31.67 points).`</br></br>
+# HW08 grading policy
 
 <strong> If you did not use the proper flags (i.e forgetting to use -Werror) while compiling may lead to compile error. Regrade is not possible for such cases</strong>
 
+`If you did not submit makefile, you will lose 15% of your grade.`
+`If you did not submit main.c, you will get zero`
 
-## IsInteger() function (15 points)
-- In testInt.txt, you will find 15 different cases were used to verify your code. (1 point for each test case)
-- In int_expected.txt, you will find the right output for each case in testInt.txt </br></br>
-For testing, you can compile and run  your code through the following command:
+## createDouble() function (100 points)
+- To test this function we used five commands (20 each) which are : 
 <pre>
-./pe07 Grading/testInt.txt -I > out.txt
+./pa08 -D 1 9 3 | sort >stest1.txt  #right output in test1
+./pa08 -D 1 1 20 | sort>stest2.txt  #right output in test2
+./pa08 -D 5 6 7 | sort >stest3.txt  #right output in test3
+./pa08 -D 7 9 6 | sort >stest4.txt  #right output in test4
+./pa08 -D 4 8 5 | sort >stest5.txt  #right output in test5
 </pre>
-Then run the `diff` command to compare or you can use `vimdiff` command:
-<pre>
-diff -w -i -U 0 out.txt Grading/int_expected.txt
-</pre>
+
+The grade for each command is calculated as following : (20 - 20\*(The number of different lines between your output and the right output, divided by the number of lines in the right output)). For example, `./pa08 -D 1 9 3 | sort >stest1.txt` has 81 lines, if the number of different lines is 10; your grade will be ( 20-(10/81)\*20) = 17.5 out of 20.
+
 
 	
-## IsDouble() function (15 points):
-- In testDbl.txt, you will find 15 different cases were used to verify your code. (1 point for each test case)
-- In double_expected.txt, you will find the right output for each case in testDbl.txt </br></br>
-For testing, you can compile and run  your code through the following command:
+## createDouble() function (100 points)
+- To test this function we used three commands which are : 
 <pre>
-./pe07 Grading/testDbl.txt -D > out2.txt
-</pre>
-Then run the `diff` command to compare or you can use `vimdiff` command:
+./pa08 -VID a a B B 3 3 4 | sort > svtest1.txt #(20 points) #right output in vtest1
+./pa08 -VID a z A Z 1 9 1 | sort > svtest2.txt #(10 points) #right output in vtest2
+./pa08 -VID g h M N 5 6 3 | sort > svtest3.txt #(20 points) #right output in vtest3
 <pre>
-diff -w -i -U 0 out2.txt Grading/double_expected.txt
-</pre>
 
+The grade for each commands is calculated similar to the creatDouble() function.
 
-## IsValidIdentifier() function (15 points):
-- In testVID.txt, you will find 15 different cases were used to verify your code. (1 point for each test case)
-- In validId_expected.txt, you will find the right output for each case in testVID.txt </br></br>
-For testing, you can compile and run  your code through the following command:
-<pre>
-./pe07 Grading/testVID.txt -VID > out3.txt
-</pre>
-Then run the `diff` command to compare or you can use `vimdiff` command:
-<pre>
-diff -w -i -U 0 out3.txt Grading/validId_expected.txt
-</pre>
+# Testing your code
 
-
-## Test All (45 points)
-- In testAll.txt, you will find 45 different cases were used to verify your code. (1 point for each test case)
-- In all_expected.txt, you will find the right output for each case in testAll.txt </br></br>
-For testing, you can compile and run  your code through the following command:
-<pre>
-./pe07 Grading/testAll.txt > out4.txt
-</pre>
-Then run the `diff` command to compare or you can use `vimdiff` command:
-<pre>
-diff -w -i -U 0 out4.txt Grading/all_expected.txt
-</pre>
-
-## Cases
-`If you did not submit any cases you will lose 10 points`
-- To test your cases.txt, we compile and run your code for your cases using the following command:
-<pre>
-./pe07 cases.txt > out5.txt //Your output
-</pre>
-
-Then we run our code and compare the two output files. To verfiy, you can apply the RegEx rules to ensure the correctness of your ouput.
-For each difference you will lose 0.1 points out of 5.
+To test your code you have two options:
+1- run each command and `diff`.
+2- run the following command in the grading directory `python p.py`, which will create `yourGrade.txt` file that has detailed explanation of your grade. But you need to deduct 2 points per hour late yourself.
 
 
 
