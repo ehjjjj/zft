@@ -1,9 +1,8 @@
 # HW08 grading policy
 
-<strong> If you did not use the proper flags (i.e forgetting to use -Werror) while compiling may lead to compile error. Regrade is not possible for such cases</strong>
-
 `If you did not submit makefile, you will lose 15% of your grade.`
 `If you did not submit main.c, you will get zero`
+`If you did not use the proper flags (i.e forgetting to use -Werror) while compiling may lead to compile error. Regrade is not possible for such cases`
 
 ## createDouble() function (100 points)
 - To test this function we used five commands (20 each) which are : 
@@ -27,7 +26,7 @@ The grade for each command is calculated as following : (20 - 20\*(The number of
 ./pa08 -VID g h M N 5 6 3 | sort > svtest3.txt #(20 points) #right output in vtest3
 </pre>
 
-The grade for each commands is calculated similar to the creatDouble() function.
+The grade for each command is calculated similar to the creatDouble() function.
 
 # Testing your code
 
